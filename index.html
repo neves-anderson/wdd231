@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Desenvolvimento Frontend para Web I</title>
+    <meta name="description" content="Página principal para o curso WDD231 - Desenvolvimento Frontend para Web I - Anderson Neves">
+    <meta name="author" content="Anderson Neves">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <!-- Scripts com atributo defer -->
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="imagens/logo.svg" alt="Logotipo WDD231" class="logo-img">
+            <span class="site-name">Web Developer - Anderson Neves</span>
+        </div>
+        <button id="menu-hamburger" aria-label="Abrir Menu de Navegação">☰</button>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="#">Projeto da Câmara</a></li>
+            <li><a href="#">Projeto Final</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Página Inicial</h1>
+
+        <div class="grid-2col">
+            <section class="card">
+                <h2 class="card-header">Sobre Mim</h2>
+                <div class="card-body">
+                    <p>Olá, meu nome é Anderson Neves e sou de Manaus, Amazonas. Gosto de ler e assistir filmes/séries. Estou estudando Desenvolvimento de Software na BYU-Pathway Worldwide. Estou super animado para aprender sobre Fundamentos da Web. Sejam bem-vindos à minha página! Espero poder contribuir com os colegas sobre tudo o que aprender ao longo do curso de Desenvolvimento Web.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-header">Foto</h2>
+                <div class="card-body photo-body">
+                    <img src="imagens/perfil.jpg" alt="Perfil Anderson Neves" class="profile-img">
+                </div>
+            </section>
+        </div>
+
+        <!-- Seção: Certificado / Cursos Dinâmicos -->
+        <section class="card certificado-section">
+            <h2 class="card-header">Cursos de Certificação Web</h2>
+            <div class="card-body">
+                <div class="filtros-container">
+                    <button id="btn-todos" class="btn-filtro active">Todos os Cursos</button>
+                    <button id="btn-wdd" class="btn-filtro">Cursos WDD</button>
+                    <button id="btn-cse" class="btn-filtro">Cursos CSE</button>
+                </div>
+
+                <div id="container-cursos" class="cursos-grid">
+                    <!-- Gerado dinamicamente via curso.js -->
+                </div>
+
+                <div class="creditos-container">
+                    <p><strong>Total de Créditos Exibidos:</strong> <span id="total-creditos">0</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socialmedia">
+            <a href="https://github.com/neves-anderson" target="_blank" rel="noopener"><img src="imagens/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/anderson-neves/" target="_blank" rel="noopener"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener"><img src="imagens/facebook.png" alt="Facebook"></a>           
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img src="imagens/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; <span id="anoAtual"></span> | Anderson Neves | Manaus, Amazonas, Brasil</p>
+        <p id="ultimaModificacao">Última Modificação: <span></span></p>
+    </footer>
+</body>
+</html>

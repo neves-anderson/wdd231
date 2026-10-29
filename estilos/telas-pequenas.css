@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #1e3a8a;
+    --primary-hover: #1e40af;
+    --secondary-color: #0d9488;
+    --accent-completed: #15803d;
+    --accent-completed-bg: #cedef4;
+    --accent-pending-bg: #f3f4f6;
+    --text-color: #1e293b;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --border-color: #cbd5e1;
+    --header-bg: #cedef4;
+    --font-heading: 'Roboto', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+/* Header & Navegação */
+.top-header {
+    background-color: var(--header-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.site-name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000;
+}
+
+#menu-hamburger {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    background-color: var(--primary-color);
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.85rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+nav li a:hover,
+nav li a.active {
+    background-color: var(--secondary-color);
+}
+
+/* Conteúdo Principal */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+}
+
+.grid-2col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    background-color: var(--header-bg);
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card-body {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+.photo-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    
+}
+
+/* Filtros e Cursos */
+.filtros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    justify-content: center;
+}
+
+.btn-filtro {
+    background-color: #e2e8f0;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-filtro:hover,
+.btn-filtro.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.curso-card {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.85rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--accent-pending-bg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.curso-card.completed {
+    background-color: var(--accent-completed-bg);
+    border-color: var(--accent-completed-bg);
+    color: var(--primary-color);
+}
+
+.creditos-container {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 1rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.socialmedia img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.15);
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+}
