@@ -1,4 +1,3 @@
-/* Reset CSS Básico e Normalização */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;

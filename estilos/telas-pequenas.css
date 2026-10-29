@@ -48,7 +48,7 @@ body {
 }
 
 #menu-hamburger {
-    background-color: #ffffff;
+    background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 4px;
     padding: 6px 12px;
@@ -59,6 +59,7 @@ body {
 nav {
     display: none;
     background-color: var(--primary-color);
+    color: var(--card-bg);
 }
  
 nav.open {
@@ -71,7 +72,7 @@ nav ul {
 
 nav li a {
     display: block;
-    color: #ffffff;
+    color: var(--card-bg);
     text-decoration: none;
     padding: 0.85rem 1.5rem;
     font-weight: 600;
@@ -109,7 +110,7 @@ nav li a.active {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 6px #0000000D;
 }
 
 .card-header {
@@ -164,8 +165,7 @@ nav li a.active {
 .btn-filtro:hover,
 .btn-filtro.active {
     background-color: var(--primary-color);
-    color: #ffffff;
-    border-color: var(--primary-color);
+    color: var(--card-bg);
 }
 
 .cursos-grid {
@@ -186,12 +186,11 @@ nav li a.active {
 
 .curso-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 8px #00000014;
 }
 
 .curso-card.completed {
     background-color: var(--accent-completed-bg);
-    border-color: var(--accent-completed-bg);
     color: var(--primary-color);
 }
 
