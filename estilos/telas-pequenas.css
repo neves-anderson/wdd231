@@ -132,7 +132,7 @@ nav li a[aria-current="page"] {
 .card-body {
     padding: 1.5rem;
     font-size: 0.95rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .photo-body {
@@ -142,7 +142,7 @@ nav li a[aria-current="page"] {
 }
 
 .profile-img {
-    width: 150px;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
@@ -202,7 +202,7 @@ nav li a[aria-current="page"] {
 
 .creditos-container {
     margin-top: 1rem;
-    text-align: right;
+    text-align: center;
     font-size: 1rem;
 }
 
