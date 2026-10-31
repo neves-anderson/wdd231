@@ -11,6 +11,7 @@
     --header-bg: #cedef4;
     --font-heading: 'Roboto', sans-serif;
     --font-body: 'Open Sans', sans-serif;
+    --text-current: yellow;
 }
 
 body {
@@ -83,6 +84,11 @@ nav li a:hover,
 nav li a.active {
     background-color: var(--primary-hover);
 }
+
+nav li a[aria-current="page"] {
+  color: var(--text-current);
+}
+
 
 .container {
     max-width: 1100px;
