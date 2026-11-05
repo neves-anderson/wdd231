@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmara de Comércio de Manaus - AM</title>
+    <meta name="description" content="Câmara de Comércio de Manaus - AM. Descubra empresas, eventos e informações sobre o clima atual e previsão do tempo.">
+    <meta name="author" content="Anderson Neves">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/navegacao.js" defer></script>
+    <link rel="icon" href="imagens/favicon.ico">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo-camara">
+            <img src="imagens/logo.png" alt="Logo Câmara de Comércio de Manaus" class="logo">
+            <div class="site-nome">
+                <h1>Manaus</h1>
+                <p>Câmara de Comércio</p>
+            </div>
+        </div>
+        
+        <button id="hamburger-btn" aria-label="Abrir Menu">&#9776;</button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="diretorio.html" class="active">Início</a></li>
+                <li><a href="#">Diretório</a></li>
+                <li><a href="#">Associar-se</a></li>
+                <li><a href="#">Descobrir</a></li>
+            </ul>
+        </nav>
+
+        <button id="theme-toggle" aria-label="Alternar modo escuro">🌙</button>
+    </header>
+  
+
+   <!-- Barra de controle de visualização -->
+    <div class="menu-bar">
+        <button id="btn-grid" class="active">Visualização em Grid</button>
+        <button id="btn-lista">Visualização em Lista</button>
+    </div>
+
+    <!-- Container onde os dados serão renderizados -->
+    <main>
+        <div id="container-membros" class="grid-view"></div>
+    </main>
+   
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="endereco">
+            <h4>Câmara de Comércio de Manaus</h4>
+            <p>Rua Getúlio Vargas, 1320</p>
+            <p>Manaus - AM, Brasil</p>
+            <p>info@manauscc.org</p>
+            <p>(92) 3248-5126</p>
+        </div>
+
+         <div class="socialmedia">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="imagens/linkedin.png" alt="Perfil do LinkedIn"></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener"><img src="imagens/facebook.png" alt="Perfil do Facebook"></a>           
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img src="imagens/instagram.png" alt="Perfil do Instagram"></a>
+        </div>
+
+        <div class="footer-meta">
+            <p>Projeto de Aula WDD231</p>
+            <p>Anderson de Souza das Neves</p>
+            <p>&copy; <span id="anoAtual"> </span> Manaus Câmara de Comércio</p>
+            <p><span id="ultimaModificacao">Última Modificação:</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

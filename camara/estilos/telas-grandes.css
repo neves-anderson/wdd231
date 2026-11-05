@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+    
+    
+    #hamburger-btn {
+        display: none;
+    }
+
+    
+    #nav-menu {
+        display: flex;
+        position: static;
+        width: auto;
+        background-color: transparent;        
+    }
+
+    #nav-menu ul {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    #nav-menu li a {
+        display: flex;
+        border-bottom: none;
+        padding: 0.5rem 0.8rem;
+        border-radius: 4px;
+    }
+
+    /* Ajuste do banner principal */
+    .hero {
+       height: 320px;
+       width: 100%;
+    }
+
+    /* Grade de Informações (3 colunas assimétricas) */
+    .info-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .event-card {
+        margin-bottom: 0;
+    }
+
+    /* Grade de Empresas em Destaque (3 colunas iguais) */
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    /* Rodapé em 3 colunas horizontais */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-meta {
+        text-align: right;
+    }
+}
