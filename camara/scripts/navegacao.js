@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Estrutura HTML do cartão respeitando as classes definidas em telas-pequenas.css
             cartao.innerHTML = `
-                <a href="${membro.url_do_site}" target="_blank" rel="noopener noreferrer" class="link-detalhes"><img src="${membro.nome_do_arquivo_de_imagem}" alt="Logo de ${membro.nome_da_empresa}" loading="lazy"></a>
+                <a href="${membro.site}" target="_blank" rel="noopener noreferrer" class="link-detalhes"><img src="${membro.logo}" alt="Logo de ${membro.nome}" loading="lazy"></a>
                 <div class="card-info">
-                    <h2>${membro.nome_da_empresa}</h2>
-                    <p class="ano">Fundada em: ${membro.ano_fundacao}</p>
-                    <p class="info-extra"><strong>Ramo:</strong> ${membro.ramo_de_atividade}</p>
-                    <p class="info-extra"><strong>Endereço:</strong> ${membro.endereco}</p>
-                    <p class="info-extra"><strong>Telefone:</strong> ${membro.numero_de_telefone}</p>
+                    <h2>${membro.nome}</h2>
+                    <p class="categoria">${membro.categoria}</p>
+                    <p class="info-extra"><strong>E-mail:</strong> ${membro.email}</p>
+                    <p class="info-extra"><strong>Telefone:</strong> ${membro.telefone}</p>
+                    <p class="info-extra"><strong>Site:</strong> ${membro.site}</p>
                 </div>
             `;
 

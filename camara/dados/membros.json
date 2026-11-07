@@ -1,101 +1,122 @@
 [
   {
-    "id": 1,
-    "nome_da_empresa": "Café do Pina",
-    "endereco": "Praça Heliodoro Balbi (da Polícia), 40 - Centro, Manaus - AM",
-    "numero_de_telefone": "(92) 99112-2233",
-    "url_do_site": "https://www.instagram.com/cafedopina",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 3,
-    "ramo_de_atividade": "Alimentação e Cafeteria",
-    "ano_fundacao": 1980
+    "nome": "Bemol",
+    "categoria": "Varejo e E-commerce",
+    "logo": "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=600&q=80",
+    "email": "atendimento@bemol.com.br",
+    "telefone": "(92) 2123-1000",
+    "site": "https://www.bemol.com.br"
   },
   {
-    "id": 2,
-    "nome_da_empresa": "Livraria Valer",
-    "endereco": "Av. Ramos Ferreira, 1195 - Centro, Manaus - AM",
-    "numero_de_telefone": "(92) 3182-7000",
-    "url_do_site": "https://www.editoravaler.com.br",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 3,
-    "ramo_de_atividade": "Livraria e Editora",
-    "ano_fundacao": 1993
+    "nome": "Café do Pina",
+    "categoria": "Alimentação e Cafeteria",
+    "logo": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80",
+    "email": "contato@cafedopina.com.br",
+    "telefone": "(92) 3234-5678",
+    "site": "https://www.cafedopina.com.br"
   },
   {
-    "id": 3,
-    "nome_da_empresa": "Bemol Eletrônicos",
-    "endereco": "Rua Marechal Deodoro, 420 - Centro, Manaus - AM",
-    "numero_de_telefone": "(92) 3182-8000",
-    "url_do_site": "https://www.bemol.com.br",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 3,
-    "ramo_de_atividade": "Varejo e E-commerce",
-    "ano_fundacao": 1942
+    "nome": "Editora Valer",
+    "categoria": "Livraria e Editora",
+    "logo": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80",
+    "email": "contato@editoravaler.com.br",
+    "telefone": "(92) 3182-7000",
+    "site": "https://www.editoravaler.com.br"
   },
   {
-    "id": 4,
-    "nome_da_empresa": "Amazon Aventura Ecoturismo",
-    "endereco": "Rua Instalação, 116 - Centro, Manaus - AM",
-    "numero_de_telefone": "(92) 99185-1100",
-    "url_do_site": "https://www.amazonaventura.com.br",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 2,
-    "ramo_de_atividade": "Turismo e Lazer",
-    "ano_fundacao": 2005
+    "nome": "Amazon Aventura",
+    "categoria": "Turismo e Lazer",
+    "logo": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=600&q=80",
+    "email": "contato@amazonaventura.com.br",
+    "telefone": "(92) 99123-4567",
+    "site": "https://www.amazonaventura.com.br"
   },
   {
-    "id": 5,
-    "nome_da_empresa": "Instituto de Pesquisa Eldorado - Polo Manaus",
-    "endereco": "Av. Mário Ypiranga, 315 - Adrianópolis, Manaus - AM",
-    "numero_de_telefone": "(92) 3090-2000",
-    "url_do_site": "https://www.eldorado.org.br",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 3,
-    "ramo_de_atividade": "Tecnologia da Informação e P&D",
-    "ano_fundacao": 1999
+    "nome": "Instituto Eldorado",
+    "categoria": "Tecnologia da Informação e P&D",
+    "logo": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80",
+    "email": "contato@eldorado.org.br",
+    "telefone": "(92) 3303-4000",
+    "site": "https://www.eldorado.org.br"
   },
   {
-    "id": 6,
-    "nome_da_empresa": "Gráfica Amazonas",
-    "endereco": "Av. Sete de Setembro, 1530 - Centro, Manaus - AM",
-    "numero_de_telefone": "(92) 3234-5500",
-    "url_do_site": "https://www.graficaamazonas.com.br",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 1,
-    "ramo_de_atividade": "Serviços Gráficos",
-    "ano_fundacao": 1978
-  },
-{
-    "id": 7,
-    "nome_da_empresa": "Construtora Capital",
-    "endereco": "Av. Djalma Batista, 1661 - Chapada, Manaus - AM",
-    "numero_de_telefone": "(92) 3627-2000",
-    "url_do_site": "https://construtoracapital.com.br/",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 3,
-    "ramo_de_atividade": "Construção Civil",
-    "ano_fundacao": 1974
+    "nome": "Gráfica Amazonas",
+    "categoria": "Serviços Gráficos",
+    "logo": "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&w=600&q=80",
+    "email": "contato@graficaamazonas.com.br",
+    "telefone": "(92) 3622-1122",
+    "site": "https://graficaamazonas.com/"
   },
   {
-    "id": 8,
-    "nome_da_empresa": "Academia Cia Athletica Manaus",
-    "endereco": "Av. Mário Ypiranga, 1300 - Manauara Shopping, Manaus - AM",
-    "numero_de_telefone": "(92) 3614-3000",
-    "url_do_site": "https://www.ciaathletica.com.br/manauara-shopping/",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 2,
-    "ramo_de_atividade": "Saúde e Fitness",
-    "ano_fundacao": 2009
+    "nome": "Construtora Capital",
+    "categoria": "Construção Civil",
+    "logo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
+    "email": "contato@construtoracapital.com.br",
+    "telefone": "(92) 3642-2000",
+    "site": "https://www.construtoracapital.com.br"
   },
   {
-    "id": 9,
-    "nome_da_empresa": "Churrascaria Búfalo",
-    "endereco": "Rua Pará, 82 - Vieiralves, Manaus - AM",
-    "numero_de_telefone": "(92) 3131-9000",
-    "url_do_site": "https://www.churrascariabufalo.com.br",
-    "nome_do_arquivo_de_imagem": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80",
-    "nivel_de_associacao": 2,
-    "ramo_de_atividade": "Alimentação e Gastronomia",
-    "ano_fundacao": 1985
+    "nome": "Cia Athletica",
+    "categoria": "Saúde e Fitness",
+    "logo": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80",
+    "email": "manauara@ciaathletica.com.br",
+    "telefone": "(92) 3614-3000",
+    "site": "https://www.ciaathletica.com.br"
+  },
+  {
+    "nome": "Rancho Búfalo",
+    "categoria": "Alimentação e Gastronomia",
+    "logo": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SE0kHUsgCuf5j5uJAsdwKOMca_ZHGSam2us9hbQGBUrSLPQAj6IB3NUrd1Ryp-uH_UzTGh1L4yfIUNRuUEEcAN_IJzF5taY119wXKS7vvGC7lURt4DW7JhOCle2GnE9ptHIaLVVg=s1360-w1360-h1020-rw",
+    "email": "contato@churrascariabufalo.com.br",
+    "telefone": "(92) 3659-4000",
+    "site": "https://www.ranchobufalo.com.br"
+  },
+  {
+    "nome": "Intercity Hotel Manaus",
+    "categoria": "Hotelaria e Turismo",
+    "logo": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TWfx8Lqjgmb3MYBxQQOVrvR9Kk2gMa-cK5p3xRsdjbrVeVzXPdUsGBJLGFKym5NrKnfPMXC60QhlyQZ78w-TIJKlU7QQWKpj5em1d9FIx6qxmvuAzFHyVTvlgpOTOpXc0riA-N=s1360-w1360-h1020-rw",
+    "email": "manaus@intercityhoteis.com.br",
+    "telefone": "(92) 3303-1200",
+    "site": "https://www.intercityhoteis.com.br"
+  },
+  {
+    "nome": "Restaurante Banzeiro",
+    "categoria": "Gastronomia Regional",
+    "logo": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80",
+    "email": "contato@banzeiromanaus.com.br",
+    "telefone": "(92) 3234-1621",
+    "site": "https://www.instagram.com/banzeiromanaus.oficial/"
+  },
+  {
+    "nome": "Carrefour Manaus",
+    "categoria": "Supermercado e Varejo",
+    "logo": "https://lh3.googleusercontent.com/grass-cs/AABkmLfQt_lRcWzpF_MUr0bpvvGx3UvHkqLyUMhqR1LmatvZiWEzwFP0skTvuAdlUiBxvHc2zSXhrt08ipnn4kAAiO_xq7RUDla-91wsYI20mRd1yJbFS_URGVZuaPab3mekPRUVZivB=s1360-w1360-h1020-rw",
+    "email": "atendimento@carrefour.com.br",
+    "telefone": "(92) 3004-2222",
+    "site": "https://www.carrefour.com.br"
+  },
+  {
+    "nome": "Sumaúma Park Shopping",
+    "categoria": "Shopping Center e Varejo",
+    "logo": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCT8eCClNgTH2m1CAK7rMkvKPzxIZBzL9iP-EdUbc-q9IIIX-NvanaRzEikS0G6p7wDDAE3_9TIwDd_G7abGwYQct6S0YK45DO8A43E0KcuVT6pwIxSTxNvdDKqowcYg7VvBU=s1360-w1360-h1020-rw",
+    "email": "contato@sumaumaparkshopping.com.br",
+    "telefone": "(92) 2121-8700",
+    "site": "https://www.sumaumaparkshopping.com.br"
+  },
+  {
+    "nome": "Amazonas Shopping",
+    "categoria": "Shopping Center e Varejo",
+    "logo": "https://allos.com.br/wp-content/uploads/2022/12/Amazonas-1.jpg",
+    "email": "contato@amazonasshopping.com.br",
+    "telefone": "(92) 2101-9300",
+    "site": "https://www.amazonasshopping.com.br"
+  },
+  {
+    "nome": "Manauara Shopping",
+    "categoria": "Shopping Center e Varejo",
+    "logo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/5b/15/79/fachada-av-umberto-calderaro.jpg?w=1400&h=800&s=1",
+    "email": "contato@manauarashopping.com.br",
+    "telefone": "(92) 3642-3700",
+    "site": "https://www.manauarashopping.com.br"
   }
 ]

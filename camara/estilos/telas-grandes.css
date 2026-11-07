@@ -34,22 +34,22 @@
        width: 100%;
     }
 
-    /* Grade de Informações (3 colunas assimétricas) */
+    
     .info-grid {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .event-card {
         margin-bottom: 0;
     }
 
-    /* Grade de Empresas em Destaque (3 colunas iguais) */
+    
     .spotlight-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+        gap: 1rem;
         margin-bottom: 0;
     }
 
