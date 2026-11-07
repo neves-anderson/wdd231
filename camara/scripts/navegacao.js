@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Função para renderizar os cartões dos membros
     function renderizarMembros(membros) {
-        containerMembros.innerHTML = ""; // Limpa o container antes de renderizar
+        containerMembros.innerHTML = ""; 
 
         membros.forEach(membro => {
             const cartao = document.createElement("section");
