@@ -15,8 +15,9 @@ body {
    CABEÇALHO E NAVEGAÇÃO (MOBILE)
    ========================================================================== */
 header {
-   background-color: #081a89;
+    background-color: #081a89;
     display: grid;
+    color:#ffff;
     grid-template-columns: 2fr auto;
     justify-content: space-between;
     padding: 1rem;
