@@ -231,6 +231,7 @@ main {
    ========================================================================== */
 footer {
     background-color: #081a89;
+    color: #ffff;
     padding: 1.5rem;
     margin-top: 2rem;
     display: flex;
