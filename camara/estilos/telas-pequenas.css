@@ -85,7 +85,7 @@ header {
 
 #nav-menu li a:hover,
 #nav-menu li a.active {
-  color: #ffbd59; 
+  background-color: #ffbd59; 
 }
 
 .menu-bar {
@@ -193,13 +193,9 @@ main {
   box-shadow: 0 2px 4px #0000000d;
 }
 
-.list-view .card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  aspect-ratio: 1 / 1; 
-  border-radius: 4px;
-  margin-right: 15px;
+.list-view .card img,
+.list-view .card .link-detalhes {
+  display: none;
 }
 
 .list-view .card-info {

@@ -1,122 +1,152 @@
 [
   {
     "nome": "Bemol",
+    "endereco": "Av. Djalma Batista, 1234 - Manaus, AM",
     "categoria": "Varejo e E-commerce",
-    "logo": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDE%3D",
+    "logo": "https://blog.bemol.com.br/wp-content/uploads/2026/11/foto-acervo-bemol-600x400.jpg",
     "email": "atendimento@bemol.com.br",
     "telefone": "(92) 2123-1000",
+    "nível de associação": "1",
     "site": "https://www.bemol.com.br"
   },
   {
     "nome": "Café do Pina",
+    "endereco": "Rua 10 de Julho, 456 - Manaus, AM",
     "categoria": "Alimentação e Cafeteria",
-    "logo": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80",
+    "logo": "https://media-cdn.tripadvisor.com/media/photo-s/08/98/44/36/oi.jpg",
     "email": "contato@cafedopina.com.br",
     "telefone": "(92) 3234-5678",
+    "nível de associação": "2",
     "site": "https://www.instagram.com/explore/locations/365082160224109/cafe-do-pina-manaus/"
   },
   {
     "nome": "Editora Valer",
+    "endereco": "Av. Getúlio Vargas, 1000 - Manaus, AM",
     "categoria": "Livraria e Editora",
-    "logo": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMhIBQ542fDRb3bFGPpSwFNUIx9bpWHg34WJEn7x_d3VcDX2ndT3ywxY&s=10",
     "email": "contato@editoravaler.com.br",
     "telefone": "(92) 3182-7000",
+    "nível de associação": "3",
     "site": "https://www.editoravaler.com.br"
   },
   {
     "nome": "Amazon Adventure",
+    "endereco": "Av. Amazonas, 1400 - Manaus, AM",
     "categoria": "Turismo e Lazer",
     "logo": "https://images.unsplash.com/photo-1519055548599-6d4d129508c4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "email": "contato@amazonaventura.com.br",
     "telefone": "(92) 99123-4567",
+    "nível de associação": "2",
     "site": "https://www.instagram.com/amazonadventureoficial/"
   },
   {
     "nome": "Instituto Eldorado",
+    "endereco": "Av. Mario Ypiranga, 340 - Manaus, AM",
     "categoria": "Tecnologia da Informação e P&D",
     "logo": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "email": "contato@eldorado.org.br",
-    "telefone": "(92) 3303-4000",
+    "telefone": "(92) 3303-4000", 
+    "nível de associação": "3",
     "site": "https://www.eldorado.org.br"
   },
   {
     "nome": "Gráfica Amazonas",
+    "endereco": "Av. Buriti, 1400 - Manaus, AM",
     "categoria": "Serviços Gráficos",
-    "logo": "https://plus.unsplash.com/premium_photo-1682145497679-e9340895df09?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "logo": "https://images.seeklogo.com/logo-png/17/1/grafica-amazonas-logo-png_seeklogo-179076.png",
     "email": "contato@graficaamazonas.com.br",
     "telefone": "(92) 3622-1122",
+    "nível de associação": "2",
     "site": "https://graficaamazonas.com/"
   },
   {
     "nome": "Construtora Capital",
+    "endereco": "Av. Getúlio Vargas, 1000 - Manaus, AM",
     "categoria": "Construção Civil",
-    "logo": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "logo": "https://s3-sa-east-1.amazonaws.com/menvie-rhbot/logos/14596/0510221664973352_14596.png",
     "email": "contato@construtoracapital.com.br",
     "telefone": "(92) 3642-2000",
+    "nível de associação": "1",
     "site": "https://www.construtoracapital.com.br"
   },
   {
     "nome": "Cia Athletica",
+    "endereco": "Av. Getúlio Vargas, 1000 - Manaus, AM",
     "categoria": "Saúde e Fitness",
-    "logo": "https://plus.unsplash.com/premium_photo-1661631383392-c2ec8992b627?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "logo": "https://pratiquefitness.com.br/blog/wp-content/uploads/2024/09/Dicas-essenciais-para-iniciantes-se-sentirem-confortaveis-na-academia.jpg",
     "email": "manauara@ciaathletica.com.br",
     "telefone": "(92) 3614-3000",
+    "nível de associação": "1",
     "site": "https://www.ciaathletica.com.br"
   },
   {
     "nome": "Rancho Búfalo",
+    "endereco": "Av. Constantino Nery, 1000 - Manaus, AM",
     "categoria": "Alimentação e Gastronomia",
-    "logo": "https://images.unsplash.com/photo-1644704265419-96ddaf628e71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "logo": "https://media-cdn.tripadvisor.com/media/photo-s/09/3b/0d/13/rancho-bufalo.jpg",
     "email": "contato@churrascariabufalo.com.br",
     "telefone": "(92) 3659-4000",
+    "nível de associação": "2",
     "site": "https://www.instagram.com/ranchobufalooficial/"
   },
   {
     "nome": "Intercity Hotel Manaus",
+    "endereco": "Av. Getúlio Vargas, 1000 - Manaus, AM",
     "categoria": "Hotelaria e Turismo",
     "logo": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     "email": "manaus@intercityhoteis.com.br",
     "telefone": "(92) 3303-1200",
+    "nível de associação": "3",
     "site": "https://www.intercityhoteis.com.br"
   },
   {
-    "nome": "Restaurante Banzeiro",
+    "nome": "Restaurante Banzeiro", 
+    "endereco": "Rua 24 de Maio, 123 - Manaus, AM",
     "categoria": "Gastronomia Regional",
-    "logo": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80",
+    "logo": "https://media-cdn.tripadvisor.com/media/photo-s/10/11/ae/ff/salao-do-restaurante.jpg",
     "email": "contato@banzeiromanaus.com.br",
     "telefone": "(92) 3234-1621",
+    "nível de associação": "1",
     "site": "https://www.instagram.com/banzeiromanaus.oficial/"
   },
   {
     "nome": "Carrefour Manaus",
+    "endereco": "Av. Djalma Batista, 1234 - Manaus, AM",
     "categoria": "Supermercado e Varejo",
-    "logo": "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2dsISvN3uOvLl2W3AQSk6Kdjexir7DqJ_SotCwMRKxHYxHEk3rpCGgD8&s=10",
     "email": "atendimento@carrefour.com.br",
     "telefone": "(92) 3004-2222",
+    "nível de associação": "2",
     "site": "https://www.carrefour.com.br"
   },
   {
     "nome": "Sumaúma Park Shopping",
+    "endereco": "Av. Getúlio Vargas, 1000 - Manaus, AM",
     "categoria": "Shopping Center e Varejo",
-    "logo": "https://images.unsplash.com/photo-1522684462852-01b24e76b77d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "logo": "https://www.promoview.com.br/wp-content/uploads/2023/12/sumauma-shopping-manaus.jpg",
     "email": "contato@sumaumaparkshopping.com.br",
     "telefone": "(92) 2121-8700",
+    "nível de associação": "3",
     "site": "https://www.sumaumaparkshopping.com.br"
   },
   {
-    "nome": "Amazonas Shopping",
+    "nome": "Amazonas Shopping",  
+    "endereco": "Av. Djalma Batista, 1234 - Manaus, AM",
     "categoria": "Shopping Center e Varejo",
-    "logo": "https://images.unsplash.com/photo-1567958451986-2de427a4a0be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "logo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/de/83/e3/o-amazonas-shopping-center.jpg?w=700&h=-1&s=1",
     "email": "contato@amazonasshopping.com.br",
     "telefone": "(92) 2101-9300",
+    "nível de associação": "2",
     "site": "https://www.amazonasshopping.com.br"
   },
   {
     "nome": "Manauara Shopping",
+    "endereco": "Av. Recife, 1000 - Manaus, AM",
     "categoria": "Shopping Center e Varejo",
-    "logo": "https://plus.unsplash.com/premium_photo-1683121817275-85d1dcf9e4c4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "logo": "https://www.investamazonia.com.br/wp-content/uploads/2024/05/Manauara_Shopping-3-1.jpg",
     "email": "contato@manauarashopping.com.br",
     "telefone": "(92) 3642-3700",
+    "nível de associação": "3",
     "site": "https://www.manauarashopping.com.br"
   }
 ]
