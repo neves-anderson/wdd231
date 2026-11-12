@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Estrutura HTML do cartão respeitando as classes definidas em telas-pequenas.css
             cartao.innerHTML = `
-                <a href="${membro.site}" target="_blank" rel="noopener noreferrer" class="link-detalhes"><img src="${membro.logo}" alt="Logo de ${membro.nome}" loading="lazy"></a>
+                <a href="${membro.site}" target="_blank" rel="noopener noreferrer" class="link-detalhes"><img src="${membro.logo}" alt="Logo de ${membro.nome}"></a>
                 <div class="card-info">
                     <h2>${membro.nome}</h2>
                     <p class="categoria">${membro.categoria}</p>
