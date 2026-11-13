@@ -189,8 +189,9 @@ main {
   padding: 15px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   box-shadow: 0 2px 4px #0000000d;
+  width: 100%;
 }
 
 .list-view .card img,
