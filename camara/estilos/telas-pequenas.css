@@ -18,6 +18,7 @@
     --shadow-sm: 0 2px 4px #0000001A;
     --shadow-md: 0 4px 8px #00000026;
     --transition: all 0.3s ease;
+    --bg-transparent: rgba(0, 0, 0, 0);
 }
 
 * {
@@ -244,7 +245,7 @@ main {
 
 .weather-config button {
     background: var(--primary);
-    color: #ffffff; /* Corrigido de #ffff para #ffffff */
+    color: #ffffff;
     border: none;
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
@@ -395,7 +396,7 @@ main {
     text-decoration: underline;
 }
 
-/* Diretório - Controles de Visualização */
+/* Diretório */
 .menu-bar {
     padding: 15px;
     display: flex;

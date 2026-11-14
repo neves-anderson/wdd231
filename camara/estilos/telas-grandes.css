@@ -3,7 +3,6 @@
    ========================================================================== */
 
 @media screen and (min-width: 768px) {
-    /* Esconde o menu hambúrguer e exibe a barra navegável */
     #hamburger-btn {
         display: none;
     }
@@ -12,6 +11,7 @@
         display: flex !important;
         position: static;
         width: auto;
+        background-color: var(--bg-transparent);
         box-shadow: none;
         border-top: none;
     }
@@ -44,7 +44,6 @@
         border-radius: var(--radius, 4px);
     }
 
-    /* Hero Banner Principal */
     .hero {
         height: 320px;
         width: 100%;
@@ -54,14 +53,12 @@
         font-size: 1.5rem;
     }
 
-    /* Layout da Página Principal: 3 Colunas (Eventos, Clima Atual e Previsão) */
     .info-grid {
         display: grid;
         grid-template-columns: 2fr 1.2fr 1fr;
         gap: 1.5rem;
     }
 
-    /* Layout dos Spotlights em 3 Colunas */
     .spotlight-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -69,7 +66,6 @@
         margin-bottom: 0;
     }
 
-    /* Visualização em Lista Centralizada e Flexível */
     .list-view {
         max-width: 900px;
         margin: 0 auto;
@@ -85,7 +81,6 @@
         margin-bottom: 0;
     }
 
-    /* Layout do Rodapé em 3 Colunas */
     footer {
         flex-direction: row;
         justify-content: space-between;
