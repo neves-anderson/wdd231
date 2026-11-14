@@ -12,7 +12,6 @@
         display: flex !important;
         position: static;
         width: auto;
-        background-color: transparent;
         box-shadow: none;
         border-top: none;
     }
