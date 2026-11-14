@@ -1,3 +1,325 @@
+/* ==========================================================================
+   1. VARIÁVEIS GLOBAIS E CONFIGURAÇÕES DE TEMA
+   ========================================================================== */
+:root {
+    --primary: #081a89;
+    --primary-dark: #05115e;
+    --hero-bg: #1a2a6c;
+    --bg-body: #f4f4f4;
+    --bg-card: #ffffff;
+    --border-color: #dddddd;
+    --card-header-bg: #081a89;
+    --card-header-text: #ffffff;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --accent-gold: #d4af37;
+    --accent-silver: #708090;
+    --radius: 8px;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+    --transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   2. PÁGINA PRINCIPAL (MOBILE FIRST)
+   ========================================================================== */
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    flex: 1;
+}
+
+/* Banner Hero estilo Wireframe */
+.hero {
+    position: relative;
+    background-color: var(--hero-bg);
+    height: 240px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Padrão Cruzado do Wireframe */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top right, transparent 49.5%, rgba(0,0,0,0.15) 49.5%, rgba(0,0,0,0.15) 50.5%, transparent 50.5%),
+                linear-gradient(to top left, transparent 49.5%, rgba(0,0,0,0.15) 49.5%, rgba(0,0,0,0.15) 50.5%, transparent 50.5%);
+    pointer-events: none;
+}
+
+.hero-overlay-text {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.4);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.cta-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: var(--primary);
+    color: #ffffff;
+    padding: 0.7rem 1.3rem;
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    z-index: 3;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.03);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ==========================================================================
+   3. CARDS & GRIDS (MOBILE FIRST)
+   ========================================================================== */
+.card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    background-color: var(--card-header-bg);
+    color: var(--card-header-text);
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+    flex: 1;
+}
+
+/* Seção Info Grid (Eventos, Clima Atual, Previsão) */
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Estilo do Card de Clima */
+.weather-config {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.weather-config input {
+    flex: 1;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    background: var(--bg-body);
+    color: var(--text-main);
+}
+
+.weather-config button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-temp-main {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon-img {
+    width: 64px;
+    height: 64px;
+}
+
+.temp-display {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.weather-details {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.weather-details p {
+    margin-bottom: 0.2rem;
+}
+
+.weather-desc {
+    font-weight: 700;
+    color: var(--text-main);
+    text-transform: capitalize;
+    margin-bottom: 0.4rem !important;
+}
+
+/* Estilo da Previsão do Tempo */
+.forecast-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.forecast-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    background: var(--bg-body);
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.forecast-item strong {
+    color: var(--text-main);
+}
+
+.forecast-item span {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Grid de Empresas Destaque (Spotlight) */
+.spotlight-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    position: relative;
+}
+
+.spotlight-card .card-header-spotlight {
+    padding: 1rem 1rem 0.2rem 1rem;
+    text-align: center;
+}
+
+.spotlight-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.spotlight-card .slogan {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.badge-membership {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.badge-gold { background-color: var(--accent-gold); }
+.badge-silver { background-color: var(--accent-silver); }
+
+.spotlight-body-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 0.4rem;
+    object-fit: contain;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.company-details {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.company-details p {
+    margin-bottom: 0.25rem;
+    word-break: break-word;
+}
+
+.company-details a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.company-details a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   4. PÁGINA DIRETÓRIO (ESTRUTURA BASE E MOBILE)
+   ========================================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,13 +333,11 @@ body {
     line-height: 1.5;
 }
 
-/* ==========================================================================
-   CABEÇALHO E NAVEGAÇÃO (MOBILE)
-   ========================================================================== */
+/* Cabeçalho e Navegação */
 header {
     background-color: #081a89;
     display: grid;
-    color:#ffff;
+    color: #ffffff;
     grid-template-columns: 2fr auto;
     justify-content: space-between;
     padding: 1rem;
@@ -40,19 +360,19 @@ header {
 .site-nome h1 {
     font-size: 1.6rem;
     line-height: 1.1;
-    color: #ffff;
+    color: #ffffff;
 }
 
 .site-nome p {
     font-size: 0.60rem;
-    color: #ffff;
+    color: #ffffff;
 }
 
 #hamburger-btn {
     background: none;
     border: none;
     font-size: 1.8rem;
-    color: #ffff;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -78,157 +398,145 @@ header {
     display: flex;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
-    color: #ffff;
+    color: #ffffff;
     justify-content: left;
     font-weight: 600;
 }
 
 #nav-menu li a:hover,
-#nav-menu li a.active {
-  background-color: #ffbd59; 
+#nav-menu li a.active,
+#nav-menu li a[aria-current="page"] {
+    background-color: #ffbd59;
+    color: #081a89;
+    font-weight: 700; 
 }
 
 .menu-bar {
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .menu-bar button {
-  background-color: #ffffff;
-  color: #081a89;
-  border: 1px solid #081a89;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    background-color: #ffffff;
+    color: #081a89;
+    border: 1px solid #081a89;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .menu-bar button:hover {
-  background-color: #e0e0e0;
+    background-color: #e0e0e0;
 }
 
 .menu-bar button.active {
-  background-color: #081a89;
-  color: #ffffff;
+    background-color: #081a89;
+    color: #ffffff;
 }
 
-/* Base do Container */
-main {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 15px;
-}
-
+/* Modos de Exibição no Diretório */
 .grid-view {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .grid-view .card {
-  background-color: #e6e6e6;
-  border: 1px solid #cccccc;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 6px #0000001a;
-  min-height: 200px;
+    background-color: #e6e6e6;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px #0000001a;
+    min-height: 200px;
 }
 
 .grid-view .card img {
-  width: 100%;
-  max-width: 200px;
-  height: 100px;
-  object-fit: cover;
-  aspect-ratio: 220 / 140; 
-  border: 1px solid #ffffff;
-  box-shadow: 0 2px 5px #0000004c;
-  margin-bottom: 15px;
+    width: 100%;
+    max-width: 200px;
+    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 220 / 140; 
+    border: 1px solid #ffffff;
+    box-shadow: 0 2px 5px #0000004c;
+    margin-bottom: 15px;
 }
 
 .grid-view .card h2 {
-  font-size: 18px;
-  color: #000000;
-  margin-bottom: 5px;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 5px;
 }
 
 .grid-view .card .ano {
-  font-size: 14px;
-  font-weight: bold;
-  color: #333333;
-  margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
 }
 
 .grid-view .card .link-detalhes {
-  color: #0000ee;
-  text-decoration: underline;
-  font-size: 14px;
+    color: #0000ee;
+    text-decoration: underline;
+    font-size: 14px;
 }
 
 .grid-view .card .info-extra {
-  display: none; /* Oculta detalhes secundários no modo grid compacto */
+    display: none;
 }
 
-/* ==========================================
-   MODE: LISTA (Linhas)
-   ========================================== */
+/* Modo Lista (Linhas) */
 .list-view {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .list-view .card {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 4px #0000000d;
-  width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px #0000000d;
+    width: 100% !important;
+    margin-left: 0 !important;
 }
 
 .list-view .card img,
 .list-view .card .link-detalhes {
-  display: none;
+    display: none;
 }
 
 .list-view .card-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .list-view .card h2 {
-  font-size: 18px;
-  color: #1a1a1a;
+    font-size: 18px;
+    color: #1a1a1a;
 }
 
 .list-view .card .info-extra {
-  display: block;
-  font-size: 13px;
-  color: #666666;
+    display: block;
+    font-size: 13px;
+    color: #666666;
 }
 
-.list-view .card .link-detalhes {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* ==========================================================================
-   RODAPÉ (MOBILE)
-   ========================================================================== */
+/* Rodapé Mobile */
 footer {
     background-color: #081a89;
-    color: #ffff;
+    color: #ffffff;
     padding: 1.5rem;
     margin-top: 2rem;
     display: flex;
@@ -238,14 +546,8 @@ footer {
     font-size: 0.85rem;
 }
 
-.endereco h4 {
-    margin-bottom: 0.5rem;
-    color: #ffff;
-}
-
-.endereco p {
-    margin: 0.2rem 0;
-    color: #ffff;
+.endereco h4, .endereco p, .footer-meta p {
+    color: #ffffff;
 }
 
 .socialmedia {
@@ -259,9 +561,4 @@ footer {
     width: 28px;
     height: 28px;
     transition: transform 0.2s ease;
-}
-
-.footer-meta p {
-    margin: 0.25rem 0;
-    color: #ffff;
 }

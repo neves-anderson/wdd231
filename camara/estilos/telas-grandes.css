@@ -1,68 +1,99 @@
+/* ==========================================================================
+   REGRAS PARA TELAS GRANDES (MEDIA QUERY >= 768px)
+   ========================================================================== */
+
 @media screen and (min-width: 768px) {
-    
-    
+    /* Esconde o menu hambúrguer e exibe a barra navegável */
     #hamburger-btn {
         display: none;
     }
 
-    
-    #nav-menu {
-        display: flex;
+    #primary-nav, #nav-menu {
+        display: flex !important;
         position: static;
         width: auto;
-        background-color: transparent;        
+        background-color: transparent;
+        box-shadow: none;
+        border-top: none;
     }
 
-    #nav-menu ul {
+    #primary-nav ul, #nav-menu ul {
         display: flex;
         gap: 1.5rem;
         flex-wrap: wrap;
         align-items: center;
-
+        list-style: none;
     }
 
-    #nav-menu li a {
+    #primary-nav li a, #nav-menu li a {
         display: flex;
         border-bottom: none;
-        padding: 0.5rem 0.8rem;
-        border-radius: 4px;
+        padding: 0.5rem 0.9rem;
+        border-radius: var(--radius, 4px);
+        font-size: 0.95rem;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
     }
 
-    /* Ajuste do banner principal */
+    #primary-nav li a:hover,
+    #primary-nav li a.active,
+    #primary-nav li a[aria-current="page"],
+    #nav-menu li a:hover,
+    #nav-menu li a.active,
+    #nav-menu li a[aria-current="page"] {
+        background-color: #ffbd59;
+        color: #081a89;
+        font-weight: 700;
+        border-radius: var(--radius, 4px);
+    }
+
+    /* Hero Banner Principal */
     .hero {
-       height: 320px;
-       width: 100%;
+        height: 320px;
+        width: 100%;
     }
 
-   .list-view .card {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    padding: 15px 20px;
-    display: flex;
-    box-shadow: 0 2px 4px #0000000d;
-    width: 800px;
-    margin-left: 200px;
+    .hero-overlay-text {
+        font-size: 1.5rem;
     }
-    
+
+    /* Layout da Página Principal: 3 Colunas (Eventos, Clima Atual e Previsão) */
     .info-grid {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 1rem;
+        grid-template-columns: 2fr 1.2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Layout dos Spotlights em 3 Colunas */
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    /* Visualização em Lista Centralizada e Flexível */
+    .list-view {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .list-view .card {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        padding: 15px 20px;
+        display: flex;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 
     .event-card {
         margin-bottom: 0;
     }
 
-    
-    .spotlight-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        margin-bottom: 0;
-    }
-
-    /* Rodapé em 3 colunas horizontais */
+    /* Layout do Rodapé em 3 Colunas */
     footer {
         flex-direction: row;
         justify-content: space-between;

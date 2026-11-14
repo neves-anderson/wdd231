@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diretório da Câmara de Comércio de Manaus - AM</title>
-    <meta name="description" content="Diretório da Câmara de Comércio de Manaus - AM. Descubra empresas, eventos e informações sobre o clima atual e previsão do tempo.">
+    <title>Câmara de Comércio de Manaus - AM</title>
+    <meta name="description" content="Página inicial da Câmara de Comércio de Manaus - AM com eventos, clima atual e destaque de membros.">
     <meta name="author" content="Anderson Neves">
 
-     <!-- Google Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
 
-    <!-- Scripts com atributo defer -->
-    <script src="scripts/data.js" defer></script>
+    <!-- Scripts -->
     <script src="scripts/navegacao.js" defer></script>
-    
+    <script src="scripts/clima.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/data.js" defer></script>
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="icon" href="imagens/favicon.ico">
-
-    <!--Metadados para o Facebook-->
-    <meta property="og:title" content="Diretório da Câmara de Comércio de Manaus - AM">
-    <meta property="og:description" content="Descubra empresas, eventos e informações sobre o clima atual e previsão do tempo da cidade de Manaus.">
-    <meta property="og:image" content="	https://neves-anderson.github.io/wdd231/camara/imagens/logo.png">   
-    <meta property="og:url" content="https://www.manauscc.org/diretorio.html">
 </head>
 <body>
 
@@ -46,27 +40,62 @@
 
         <nav id="nav-menu">
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="diretorio.html" class="active">Diretório</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
                 <li><a href="#">Associar-se</a></li>
                 <li><a href="#">Descobrir</a></li>
             </ul>
         </nav>
-
     </header>
-  
 
-   <!-- Barra de controle de visualização -->
-    <div class="menu-bar">
-        <button id="btn-grid" class="active">Visualização em Grid</button>
-        <button id="btn-lista">Visualização em Lista</button>
-    </div>
-
-    <!-- Container onde os dados serão renderizados -->
     <main>
-        <div id="container-membros" class="grid-view"></div>
+        <!-- SEÇÃO HERO BANNER -->
+        <section class="hero">
+            <div class="hero-overlay-text">Conectando Empresas e Impulsionando Negócios no Amazonas</div>
+            <img src="imagens/manaus.jpg" alt="Imagem bem escolhida e impactante">
+            <a href="diretorio.html" class="cta-btn">Ingressos Palestra</a>
+        </section>
+
+        <!-- SEÇÃO INFORMAÇÕES (Eventos, Clima Atual, Previsão) -->
+        <section class="info-grid">
+            <!-- Eventos -->
+            <article class="card event-card">
+                <div class="card-header">Eventos</div>
+                <div class="card-body">
+                    <h3>III Fórum de Bioeconomia da Amazônia</h3>
+                    <p><strong>Data:</strong> 25 de Novembro | 09:00h</p>
+                    <p><strong>Local:</strong> Centro de Convenções Vasco Vasques</p>
+                    <br>
+                    <h3>Rodada de Negócios e Inovação P&D</h3>
+                    <p><strong>Data:</strong> 02 de Dezembro | 14:00h</p>
+                    <p><strong>Local:</strong> Auditório AFEAM / Manaus</p>
+                </div>
+            </article>
+
+            <!-- Clima Atual -->
+            <article class="card weather-card">
+                <div class="card-header">Clima Atual</div>
+                <div class="card-body" id="clima-container">
+                    <!-- Preenchido dinamicamente via JS -->
+                </div>
+            </article>
+
+            <!-- Previsão do Clima -->
+            <article class="card forecast-card">
+                <div class="card-header">Previsão do Clima</div>
+                <div class="card-body" id="previsao-container">
+                    <!-- Preenchido dinamicamente via JS -->
+                </div>
+            </article>
+        </section>
+
+        <!-- SEÇÃO DESTAQUES DE MEMBROS (SPOTLIGHTS DE NÍVEL 2 E 3) -->
+        <h2 class="section-title">Empresas em Destaque</h2>
+        <section class="spotlight-grid" id="spotlight-container">
+            <!-- Preenchido dinamicamente via JS com empresas Ouro / Prata -->
+        </section>
     </main>
-   
+
     <!-- RODAPÉ -->
     <footer>
         <div class="endereco">
@@ -77,7 +106,7 @@
             <p>(92) 3248-5126</p>
         </div>
 
-         <div class="socialmedia">
+        <div class="socialmedia">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="imagens/linkedin.png" alt="Perfil do LinkedIn"></a>
             <a href="https://facebook.com" target="_blank" rel="noopener"><img src="imagens/facebook.png" alt="Perfil do Facebook"></a>           
             <a href="https://instagram.com" target="_blank" rel="noopener"><img src="imagens/instagram.png" alt="Perfil do Instagram"></a>
@@ -86,7 +115,7 @@
         <div class="footer-meta">
             <p>Projeto de Aula WDD231</p>
             <p>Anderson de Souza das Neves</p>
-            <p>&copy; <span id="anoAtual"> </span> Câmara de Comércio de Manaus</p>
+            <p>&copy; <span id="anoAtual"></span> Câmara de Comércio de Manaus</p>
             <p><span id="ultimaModificacao">Última Modificação:</span></p>
         </div>
     </footer>
