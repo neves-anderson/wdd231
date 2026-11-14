@@ -8,7 +8,7 @@ async function carregarSpotlights() {
 
     try {
         // Tentativa de carregar o arquivo JSON na raiz do projeto
-        const resposta = await fetch('./membros.json');
+        const resposta = await fetch('dados/membros.json');
         
         if (!resposta.ok) {
             throw new Error(`Não foi possível carregar o arquivo membros.json (Status: ${resposta.status})`);
@@ -66,5 +66,5 @@ function renderizarSpotlights(container, membros) {
     }).join('');
 }
 
-// Executar assim que o DOM estiver pronto
+
 document.addEventListener('DOMContentLoaded', carregarSpotlights);
