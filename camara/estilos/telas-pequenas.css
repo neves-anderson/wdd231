@@ -228,13 +228,10 @@ main { max-width: 1200px; width: 100%; margin: 0 auto; padding: 1.5rem 1rem; fle
 
 .spotlight-body-content { display: flex; gap: 1rem; align-items: center; }
 .company-logo {
-    width: 80px;
-    height: 80px;
-    border: 2px solid var(--border-color);
+    width: 90px;
+    height: 90px;
     border-radius: var(--radius);
-    padding: 0.4rem;
-    object-fit: contain;
-    background: #fff;
+    
     flex-shrink: 0;
 }
 .company-details { font-size: 0.85rem; line-height: 1.5; }
