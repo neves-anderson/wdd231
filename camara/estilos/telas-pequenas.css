@@ -222,8 +222,8 @@ main { max-width: 1200px; width: 100%; margin: 0 auto; padding: 1.5rem 1rem; fle
     color: #000;
     letter-spacing: 0.5px;
 }
-.badge-gold { background-color: var(--accent-gold); }
-.badge-silver { background-color: var(--accent-silver); }
+.membro-ouro { background-color: var(--accent-gold); }
+.membro-prata { background-color: var(--accent-silver); }
 
 .spotlight-body-content { display: flex; gap: 1rem; align-items: center; }
 .company-logo {

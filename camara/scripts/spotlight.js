@@ -36,14 +36,14 @@ async function carregarSpotlights() {
 
     } catch (erro) {
         console.error("Erro no carregamento dos spotlights:", erro);
-        spotlightContainer.innerHTML = `<p style="color: #FF0000; padding: 1rem;">Erro ao carregar destaques. Verifique se está usando um servidor local (Live Server).</p>`;
+        spotlightContainer.innerHTML = `<p style="color: #FF0000; padding: 1rem;">Erro ao carregar destaques.</p>`;
     }
 }
 
 function renderizarSpotlights(container, membros) {
     container.innerHTML = membros.map(membro => {
         const nivel = String(membro["nível de associação"]).trim();
-        const badgeClasse = nivel === "3" ? "badge-gold" : "badge-silver";
+        const badgeClasse = nivel === "3" ? "membro-ouro" : "membro-prata";
         const badgeTexto = nivel === "3" ? "Ouro" : "Prata";
 
         return `
