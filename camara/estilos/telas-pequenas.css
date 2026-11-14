@@ -31,18 +31,16 @@ main {
     flex: 1;
 }
 
-/* Banner Hero estilo Wireframe */
+
 .hero{
     position: relative;
-    background-color: var(--hero-bg);
     height: 240px;
     border-radius: var(--radius);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
-    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
 }
 
 /* Padrão Cruzado do Wireframe */
@@ -132,12 +130,12 @@ main {
     flex: 1;
 }
 
-/* Seção Info Grid (Eventos, Clima Atual, Previsão) */
+
 .info-grid {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Estilo do Card de Clima */
@@ -259,12 +257,12 @@ main {
     color: var(--text-muted);
     font-style: italic;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .badge-membership {
     position: absolute;
-    top: 12px;
+    top: 10px;
     right: 12px;
     font-size: 0.7rem;
     font-weight: 700;
