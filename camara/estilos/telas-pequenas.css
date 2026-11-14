@@ -1,15 +1,12 @@
 /* ==========================================================================
-   1. VARIÁVEIS GLOBAIS E CONFIGURAÇÕES DE TEMA
+   VARIÁVEIS GLOBAIS E CONFIGURAÇÕES DE TEMA (MOBILE FIRST)
    ========================================================================== */
 :root {
     --primary: #081a89;
     --primary-dark: #05115e;
-    --hero-bg: #1a2a6c;
     --bg-body: #f4f4f4;
     --bg-card: #ffffff;
     --border-color: #dddddd;
-    --card-header-bg: #081a89;
-    --card-header-text: #ffffff;
     --text-main: #333333;
     --text-muted: #666666;
     --accent-gold: #d4af37;
@@ -21,11 +18,7 @@
     --bg-transparent: rgba(0, 0, 0, 0);
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -34,13 +27,13 @@ body {
     line-height: 1.5;
 }
 
-/* ==========================================================================
-   2. CABEÇALHO E NAVEGAÇÃO MOBILE
-   ========================================================================== */
-header {
+header, footer, #nav-menu {
     background-color: var(--primary);
-    display: grid;
     color: #ffffff;
+}
+
+header {
+    display: grid;
     grid-template-columns: 2fr auto;
     justify-content: space-between;
     padding: 1rem;
@@ -48,36 +41,12 @@ header {
     width: 100%;
 }
 
-.logo-camara {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
+.logo-camara { display: flex; align-items: center; gap: 0.5rem; }
+.logo { width: 65px; height: 65px; object-fit: contain; }
+.site-nome h1 { font-size: 1.6rem; line-height: 1.1; color: #ffffff; }
+.site-nome p { font-size: 0.60rem; color: #ffffff; }
 
-.logo {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
-}
-
-.site-nome h1 {
-    font-size: 1.6rem;
-    line-height: 1.1;
-    color: #ffffff;
-}
-
-.site-nome p {
-    font-size: 0.60rem;
-    color: #ffffff;
-}
-
-#hamburger-btn {
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    color: #ffffff;
-    cursor: pointer;
-}
+#hamburger-btn { background: none; border: none; font-size: 1.8rem; color: #ffffff; cursor: pointer; }
 
 #nav-menu {
     display: none;
@@ -85,24 +54,17 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--primary);
     z-index: 10;
 }
 
-#nav-menu.open {
-    display: block;
-}
-
-#nav-menu ul {
-    list-style: none;
-}
+#nav-menu.open { display: block; }
+#nav-menu ul { list-style: none; }
 
 #nav-menu li a {
     display: flex;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     color: #ffffff;
-    justify-content: left;
     font-weight: 600;
 }
 
@@ -111,19 +73,10 @@ header {
 #nav-menu li a[aria-current="page"] {
     background-color: #ffbd59;
     color: var(--primary);
-    font-weight: 700; 
+    font-weight: 700;
 }
 
-/* ==========================================================================
-   3. PÁGINA PRINCIPAL E COMPONENTES
-   ========================================================================== */
-main {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
-    flex: 1;
-}
+main { max-width: 1200px; width: 100%; margin: 0 auto; padding: 1.5rem 1rem; flex: 1; }
 
 .hero {
     position: relative;
@@ -170,10 +123,7 @@ main {
     gap: 0.5rem;
 }
 
-.cta-btn:hover {
-    background: var(--primary-dark);
-    transform: scale(1.03);
-}
+.cta-btn:hover { background: var(--primary-dark); transform: scale(1.03); }
 
 .section-title {
     font-size: 1.5rem;
@@ -184,7 +134,6 @@ main {
     gap: 0.5rem;
 }
 
-/* Cards & Grids */
 .card {
     background-color: var(--bg-card);
     border-radius: var(--radius);
@@ -196,8 +145,8 @@ main {
 }
 
 .card-header {
-    background-color: var(--card-header-bg);
-    color: var(--card-header-text);
+    background-color: var(--primary);
+    color: #ffffff;
     padding: 0.75rem 1rem;
     font-size: 1.1rem;
     font-weight: 600;
@@ -208,31 +157,17 @@ main {
     gap: 0.5rem;
 }
 
-.card-body {
-    padding: 1.25rem;
-    flex: 1;
-}
+.card-body { padding: 1.25rem; flex: 1; }
+.card-body h2 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
 
-.card-body h2 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.info-grid {
+.info-grid, .forecast-list, .spotlight-grid {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-/* Clima */
-.weather-config {
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 0.5rem;
-}
-
+.weather-config { margin-bottom: 1rem; display: flex; gap: 0.5rem; }
 .weather-config input {
     flex: 1;
     padding: 0.4rem 0.6rem;
@@ -243,57 +178,21 @@ main {
     color: var(--text-main);
 }
 
-.weather-config button {
+.weather-config button, .menu-bar button.active {
     background: var(--primary);
     color: #ffffff;
     border: none;
-    padding: 0.4rem 0.8rem;
     border-radius: 4px;
-    font-size: 0.8rem;
-    cursor: pointer;
     font-weight: 600;
 }
+.weather-config button { padding: 0.4rem 0.8rem; font-size: 0.8rem; cursor: pointer; }
 
-.weather-current {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.weather-icon-img {
-    width: 64px;
-    height: 64px;
-}
-
-.temp-display {
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.weather-details {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-}
-
-.weather-details p {
-    margin-bottom: 0.2rem;
-}
-
-.weather-desc {
-    font-weight: 700;
-    color: var(--text-main);
-    text-transform: capitalize;
-    margin-bottom: 0.4rem !important;
-}
-
-/* Previsão */
-.forecast-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
+.weather-current { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.weather-icon-img { width: 64px; height: 64px; }
+.temp-display { font-size: 2.2rem; font-weight: 700; line-height: 1; }
+.weather-details { font-size: 0.85rem; color: var(--text-muted); }
+.weather-details p { margin-bottom: 0.2rem; }
+.weather-desc { font-weight: 700; color: var(--text-main); text-transform: capitalize; margin-bottom: 0.4rem !important; }
 
 .forecast-item {
     display: flex;
@@ -304,44 +203,13 @@ main {
     border-radius: 6px;
     font-size: 0.9rem;
 }
+.forecast-item strong { color: var(--text-main); }
+.forecast-item span { color: var(--primary); font-weight: 700; }
 
-.forecast-item strong {
-    color: var(--text-main);
-}
-
-.forecast-item span {
-    color: var(--primary);
-    font-weight: 700;
-}
-
-/* Spotlights */
-.spotlight-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.spotlight-card {
-    position: relative;
-}
-
-.spotlight-card .card-header-spotlight {
-    padding: 1rem 1rem 0.2rem 1rem;
-    text-align: center;
-}
-
-.spotlight-card h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.spotlight-card .slogan {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
+.spotlight-card { position: relative; }
+.spotlight-card .card-header-spotlight { padding: 1rem 1rem 0.2rem 1rem; text-align: center; }
+.spotlight-card h3 { font-size: 1.2rem; font-weight: 700; }
+.spotlight-card .slogan { font-size: 0.85rem; color: var(--text-muted); font-style: italic; text-align: center; margin-bottom: 0.5rem; }
 
 .badge-membership {
     position: absolute;
@@ -355,16 +223,10 @@ main {
     color: #fff;
     letter-spacing: 0.5px;
 }
-
 .badge-gold { background-color: var(--accent-gold); }
 .badge-silver { background-color: var(--accent-silver); }
 
-.spotlight-body-content {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
+.spotlight-body-content { display: flex; gap: 1rem; align-items: center; }
 .company-logo {
     width: 80px;
     height: 80px;
@@ -375,35 +237,12 @@ main {
     background: #fff;
     flex-shrink: 0;
 }
+.company-details { font-size: 0.85rem; line-height: 1.5; }
+.company-details p { margin-bottom: 0.25rem; word-break: break-word; }
+.company-details a { color: var(--primary); text-decoration: none; font-weight: 500; }
+.company-details a:hover { text-decoration: underline; }
 
-.company-details {
-    font-size: 0.85rem;
-    line-height: 1.5;
-}
-
-.company-details p {
-    margin-bottom: 0.25rem;
-    word-break: break-word;
-}
-
-.company-details a {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.company-details a:hover {
-    text-decoration: underline;
-}
-
-/* Diretório */
-.menu-bar {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
+.menu-bar { padding: 15px; display: flex; justify-content: center; gap: 15px; }
 .menu-bar button {
     background-color: #ffffff;
     color: var(--primary);
@@ -414,22 +253,9 @@ main {
     cursor: pointer;
     transition: all 0.2s ease;
 }
+.menu-bar button:hover { background-color: #e0e0e0; }
 
-.menu-bar button:hover {
-    background-color: #e0e0e0;
-}
-
-.menu-bar button.active {
-    background-color: var(--primary);
-    color: #ffffff;
-}
-
-.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
+.grid-view { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 .grid-view .card {
     background-color: #e6e6e6;
     border: 1px solid #cccccc;
@@ -441,7 +267,6 @@ main {
     box-shadow: 0 4px 6px #0000001a;
     min-height: 200px;
 }
-
 .grid-view .card img {
     width: 100%;
     max-width: 200px;
@@ -452,93 +277,19 @@ main {
     box-shadow: 0 2px 5px #0000004c;
     margin-bottom: 15px;
 }
+.grid-view .card h2 { font-size: 18px; color: #000000; margin-bottom: 5px; }
+.grid-view .card .ano { font-size: 14px; font-weight: bold; color: #333333; margin-bottom: 10px; }
+.grid-view .card .link-detalhes { color: #0000ee; text-decoration: underline; font-size: 14px; }
+.grid-view .card .info-extra { display: none; }
 
-.grid-view .card h2 {
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 5px;
-}
+.list-view { display: flex; flex-direction: column; gap: 12px; }
+.list-view .card { padding: 15px 20px; align-items: center; justify-content: center; width: 100% !important; margin-left: 0 !important; }
+.list-view .card img, .list-view .card .link-detalhes { display: none; }
+.list-view .card-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.list-view .card h2 { font-size: 18px; color: #1a1a1a; }
+.list-view .card .info-extra { display: block; font-size: 13px; color: var(--text-muted); }
 
-.grid-view .card .ano {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.grid-view .card .link-detalhes {
-    color: #0000ee;
-    text-decoration: underline;
-    font-size: 14px;
-}
-
-.grid-view .card .info-extra {
-    display: none;
-}
-
-.list-view {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.list-view .card {
-    padding: 15px 20px;
-    align-items: center;
-    justify-content: center;
-    width: 100% !important;
-    margin-left: 0 !important;
-}
-
-.list-view .card img,
-.list-view .card .link-detalhes {
-    display: none;
-}
-
-.list-view .card-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.list-view .card h2 {
-    font-size: 18px;
-    color: #1a1a1a;
-}
-
-.list-view .card .info-extra {
-    display: block;
-    font-size: 13px;
-    color: var(--text-muted);
-}
-
-/* Rodapé */
-footer {
-    background-color: var(--primary);
-    color: #ffffff;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-    font-size: 0.85rem;
-}
-
-.endereco h4, .endereco p, .footer-meta p {
-    color: #ffffff;
-}
-
-.socialmedia {
-    display: flex;
-    justify-content: center;
-    gap: 1.25rem;
-    margin-bottom: 0.75rem;
-}
-
-.socialmedia img {
-    width: 28px;
-    height: 28px;
-    transition: transform 0.2s ease;
-}
+footer { padding: 1.5rem; margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem; text-align: center; font-size: 0.85rem; }
+.endereco h4, .endereco p, .footer-meta p { color: #ffffff; }
+.socialmedia { display: flex; justify-content: center; gap: 1.25rem; margin-bottom: 0.75rem; }
+.socialmedia img { width: 28px; height: 28px; transition: transform 0.2s ease; }

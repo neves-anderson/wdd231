@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 1. Função assíncrona para buscar os dados JSON
     async function obterMembros() {
+        // Se o container de membros não existir nesta página, interrompe a execução
+        if (!containerMembros) return;
+
         try {
             const resposta = await fetch("dados/membros.json");
             if (!resposta.ok) {
