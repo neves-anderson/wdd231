@@ -15,7 +15,7 @@
     --shadow-sm: 0 2px 4px #0000001A;
     --shadow-md: 0 4px 8px #00000026;
     --transition: all 0.3s ease;
-    --bg-transparent: rgba(0, 0, 0, 0);
+    --bg-transparent: #00000000;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

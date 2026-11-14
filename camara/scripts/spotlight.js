@@ -36,7 +36,7 @@ async function carregarSpotlights() {
 
     } catch (erro) {
         console.error("Erro no carregamento dos spotlights:", erro);
-        spotlightContainer.innerHTML = `<p style="color: red; padding: 1rem;">Erro ao carregar destaques. Verifique se está usando um servidor local (Live Server).</p>`;
+        spotlightContainer.innerHTML = `<p style="color: #FF0000; padding: 1rem;">Erro ao carregar destaques. Verifique se está usando um servidor local (Live Server).</p>`;
     }
 }
 
