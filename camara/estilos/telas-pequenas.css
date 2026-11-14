@@ -9,8 +9,8 @@
     --border-color: #dddddd;
     --text-main: #333333;
     --text-muted: #666666;
-    --accent-gold: #d4af37;
-    --accent-silver: #708090;
+    --accent-gold: #ffbd59;
+    --accent-silver: #C0C0C0;
     --radius: 8px;
     --shadow-sm: 0 2px 4px #0000001A;
     --shadow-md: 0 4px 8px #00000026;
@@ -220,7 +220,7 @@ main { max-width: 1200px; width: 100%; margin: 0 auto; padding: 1.5rem 1rem; fle
     text-transform: uppercase;
     padding: 0.25rem 0.6rem;
     border-radius: 20px;
-    color: #fff;
+    color: #000;
     letter-spacing: 0.5px;
 }
 .badge-gold { background-color: var(--accent-gold); }
