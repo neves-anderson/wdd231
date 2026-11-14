@@ -20,8 +20,101 @@
     --transition: all 0.3s ease;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-body);
+    line-height: 1.5;
+}
+
 /* ==========================================================================
-   2. PÁGINA PRINCIPAL (MOBILE FIRST)
+   2. CABEÇALHO E NAVEGAÇÃO MOBILE
+   ========================================================================== */
+header {
+    background-color: var(--primary);
+    display: grid;
+    color: #ffffff;
+    grid-template-columns: 2fr auto;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.logo-camara {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.site-nome h1 {
+    font-size: 1.6rem;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.site-nome p {
+    font-size: 0.60rem;
+    color: #ffffff;
+}
+
+#hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: 10;
+}
+
+#nav-menu.open {
+    display: block;
+}
+
+#nav-menu ul {
+    list-style: none;
+}
+
+#nav-menu li a {
+    display: flex;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    justify-content: left;
+    font-weight: 600;
+}
+
+#nav-menu li a:hover,
+#nav-menu li a.active,
+#nav-menu li a[aria-current="page"] {
+    background-color: #ffbd59;
+    color: var(--primary);
+    font-weight: 700; 
+}
+
+/* ==========================================================================
+   3. PÁGINA PRINCIPAL E COMPONENTES
    ========================================================================== */
 main {
     max-width: 1200px;
@@ -31,8 +124,7 @@ main {
     flex: 1;
 }
 
-
-.hero{
+.hero {
     position: relative;
     height: 240px;
     border-radius: var(--radius);
@@ -41,14 +133,6 @@ main {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-}
-
-/* Padrão Cruzado do Wireframe */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
 }
 
 .hero-overlay-text {
@@ -99,9 +183,7 @@ main {
     gap: 0.5rem;
 }
 
-/* ==========================================================================
-   3. CARDS & GRIDS (MOBILE FIRST)
-   ========================================================================== */
+/* Cards & Grids */
 .card {
     background-color: var(--bg-card);
     border-radius: var(--radius);
@@ -143,7 +225,7 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* Estilo do Card de Clima */
+/* Clima */
 .weather-config {
     margin-bottom: 1rem;
     display: flex;
@@ -162,7 +244,7 @@ main {
 
 .weather-config button {
     background: var(--primary);
-    color: #ffff;
+    color: #ffffff; /* Corrigido de #ffff para #ffffff */
     border: none;
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
@@ -176,11 +258,6 @@ main {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
-}
-
-.weather-temp-main {
-    display: flex;
-    align-items: center;
 }
 
 .weather-icon-img {
@@ -210,7 +287,7 @@ main {
     margin-bottom: 0.4rem !important;
 }
 
-/* Estilo da Previsão do Tempo */
+/* Previsão */
 .forecast-list {
     display: flex;
     flex-direction: column;
@@ -236,7 +313,7 @@ main {
     font-weight: 700;
 }
 
-/* Grid de Empresas Destaque (Spotlight) */
+/* Spotlights */
 .spotlight-grid {
     display: flex;
     flex-direction: column;
@@ -318,100 +395,7 @@ main {
     text-decoration: underline;
 }
 
-/* ==========================================================================
-   4. PÁGINA DIRETÓRIO (ESTRUTURA BASE E MOBILE)
-   ========================================================================== */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
-    line-height: 1.5;
-}
-
-/* Cabeçalho e Navegação */
-header {
-    background-color: #081a89;
-    display: grid;
-    color: #ffffff;
-    grid-template-columns: 2fr auto;
-    justify-content: space-between;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
-}
-
-.logo-camara {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.logo {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
-}
-
-.site-nome h1 {
-    font-size: 1.6rem;
-    line-height: 1.1;
-    color: #ffffff;
-}
-
-.site-nome p {
-    font-size: 0.60rem;
-    color: #ffffff;
-}
-
-#hamburger-btn {
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-#nav-menu {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #081a89;
-    z-index: 10;
-}
-
-#nav-menu.open {
-    display: block;
-}
-
-#nav-menu ul {
-    list-style: none;
-}
-
-#nav-menu li a {
-    display: flex;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    color: #ffffff;
-    justify-content: left;
-    font-weight: 600;
-}
-
-#nav-menu li a:hover,
-#nav-menu li a.active,
-#nav-menu li a[aria-current="page"] {
-    background-color: #ffbd59;
-    color: #081a89;
-    font-weight: 700; 
-}
-
+/* Diretório - Controles de Visualização */
 .menu-bar {
     padding: 15px;
     display: flex;
@@ -421,8 +405,8 @@ header {
 
 .menu-bar button {
     background-color: #ffffff;
-    color: #081a89;
-    border: 1px solid #081a89;
+    color: var(--primary);
+    border: 1px solid var(--primary);
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -435,11 +419,10 @@ header {
 }
 
 .menu-bar button.active {
-    background-color: #081a89;
+    background-color: var(--primary);
     color: #ffffff;
 }
 
-/* Modos de Exibição no Diretório */
 .grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -492,7 +475,6 @@ header {
     display: none;
 }
 
-/* Modo Lista (Linhas) */
 .list-view {
     display: flex;
     flex-direction: column;
@@ -500,13 +482,9 @@ header {
 }
 
 .list-view .card {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
     padding: 15px 20px;
-    display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 4px #0000000d;
     width: 100% !important;
     margin-left: 0 !important;
 }
@@ -531,12 +509,12 @@ header {
 .list-view .card .info-extra {
     display: block;
     font-size: 13px;
-    color: #666666;
+    color: var(--text-muted);
 }
 
-/* Rodapé Mobile */
+/* Rodapé */
 footer {
-    background-color: #081a89;
+    background-color: var(--primary);
     color: #ffffff;
     padding: 1.5rem;
     margin-top: 2rem;
