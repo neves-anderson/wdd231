@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial da Câmara de Comércio de Manaus-AM</title>
-    <meta name="description" content="Página inicial da Câmara de Comércio de Manaus - AM com eventos, clima atual e destaque de membros.">
+    <meta name="description" content="Associe-se à Câmara de Comércio de Manaus - AM e descubra os benefícios de ser um membro.">
     <meta name="author" content="Anderson Neves">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +16,13 @@
 
     <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/clima.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/data.js" defer></script>
     <script src="scripts/modais.js" defer></script>
     
     <link rel="icon" href="imagens/favicon.ico">
 
-    <meta property="og:title" content="Página Inicial da Câmara de Comércio de Manaus-AM">
-    <meta property="og:description" content="Descubra empresas, eventos e informações sobre o clima atual e previsão do tempo da cidade de Manaus.">
+    <meta property="og:title" content="Página associe-se a Câmara de Comércio de Manaus-AM">
+    <meta property="og:description" content="Descubra as vantagens de ser um membro da Câmara de Comércio de Manaus - AM.">
     <meta property="og:image" content="	https://neves-anderson.github.io/wdd231/camara/imagens/logo.png">   
     <meta property="og:url" content="https://www.manauscc.org/diretorio.html">
 
@@ -73,12 +72,12 @@
 
                     <label title="Cargo na organização (Mínimo de 7 caracteres, apenas letras, hifens e espaços)">
                         Cargo
-                        <input type="text" name="title" id="title" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}" title="Digite no mínimo 7 caracteres alfabéticos, hifens ou espaços">
+                        <input type="text" name="title" id="title" required autocomplete="cargo-na-organização" pattern="[A-Za-zÀ-ÿ\s\-]{7,}" title="Digite no mínimo 7 caracteres alfabéticos, hifens ou espaços">
                     </label>
 
                     <label title="Endereço de e-mail institucional ou pessoal">
                         Email *
-                        <input type="email" name="email" id="email" required autocomplete="email" title="Endereço de e-mail válido">
+                        <input type="email" name="email" id="email" required autocomplete="email" placeholder="anderson.neves@gmail.com" title="Endereço de e-mail válido">
                     </label>
 
                     <label title="Número de telefone celular para contato">
@@ -88,7 +87,7 @@
 
                     <label title="Nome da empresa ou organização">
                         Organização *
-                        <input type="text" name="organization" id="organization" required autocomplete="organization" title="Nome da empresa ou organização">
+                        <input type="text" name="organization" id="organization" required autocomplete="organização" title="Nome da empresa ou organização">
                     </label>
 
                     <label title="Descrição curta do negócio ou organização">
