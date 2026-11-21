@@ -70,7 +70,6 @@ header {
     border: none; 
     font-size: 1.8rem; 
     color: #ffffff; 
-    cursor: pointer; 
 }
 
 #nav-menu {
@@ -152,7 +151,6 @@ main {
     transition: var(--transition);
     z-index: 3;
     border: none;
-    cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -244,7 +242,6 @@ strong {
 .weather-config button { 
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem; 
-    cursor: pointer;
 }
 
 .weather-current { 
@@ -388,7 +385,6 @@ strong {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
     transition: all 0.2s ease;
 }
 .menu-bar button:hover {
@@ -549,7 +545,6 @@ footer {
     padding: 0.8rem 1.5rem;
     font-size: 1.1rem;
     border-radius: 5px;
-    cursor: pointer;
     width: 100%;
     transition: background-color 0.3s ease;
 }
@@ -626,5 +621,4 @@ footer {
     font-size: 1.2rem;
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
-    cursor: pointer;
 }
