@@ -7,36 +7,27 @@
     <meta name="description" content="Página inicial da Câmara de Comércio de Manaus - AM com eventos, clima atual e destaque de membros.">
     <meta name="author" content="Anderson Neves">
 
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-    <!-- CSS -->
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
 
-    <!-- Scripts -->
-     <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/clima.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/data.js" defer></script>
 
-    <!--Favicon-->
     <link rel="icon" href="imagens/favicon.ico">
 
-    <!--Metadados para o Facebook-->
     <meta property="og:title" content="Página Inicial da Câmara de Comércio de Manaus-AM">
     <meta property="og:description" content="Descubra empresas, eventos e informações sobre o clima atual e previsão do tempo da cidade de Manaus.">
     <meta property="og:image" content="	https://neves-anderson.github.io/wdd231/camara/imagens/logo.png">   
     <meta property="og:url" content="https://www.manauscc.org/diretorio.html">
-
-
 </head>
 <body>
 
-    <!-- CABEÇALHO -->
     <header>
         <div class="logo-camara">
             <img src="imagens/logo.png" alt="Logo Câmara de Comércio de Manaus" class="logo">
@@ -52,23 +43,23 @@
             <ul>
                 <li><a href="index.html" class="active" aria-current="page">Início</a></li>
                 <li><a href="diretorio.html">Diretório</a></li>
-                <li><a href="#">Associar-se</a></li>
+                <li><a href="associacao.html">Associar-se</a></li>
                 <li><a href="#">Descobrir</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- SEÇÃO HERO BANNER -->
+        
         <div class="hero">
             <img src="imagens/manaus.webp" alt="Cidade de Manaus com vista do Rio Negro" class="hero-img">
             <div class="hero-overlay-text">Conectando Empresas e Impulsionando Negócios no Amazonas</div>
             <a href="#" class="cta-btn">Ingressos Palestra</a>
         </div>
 
-        <!-- SEÇÃO INFORMAÇÕES (Eventos, Clima Atual, Previsão) -->
+        
         <div class="info-grid">
-            <!-- Eventos -->
+            
             <div class="card event-card">
                 <div class="card-header">Eventos</div>
                 <div class="card-body">
@@ -82,31 +73,31 @@
                 </div>
             </div>
 
-            <!-- Clima Atual -->
+            
             <div class="card weather-card">
                 <div class="card-header">Clima Atual</div>
                 <div class="card-body" id="clima-container">
-                    <!-- Preenchido dinamicamente via JS -->
+                   
                 </div>
             </div>
 
-            <!-- Previsão do Clima -->
+           
             <div class="card forecast-card">
                 <div class="card-header">Previsão do Clima</div>
                 <div class="card-body" id="previsao-container">
-                    <!-- Preenchido dinamicamente via JS -->
+                   
                 </div>
             </div>
         </div>
 
-        <!-- SEÇÃO DESTAQUES DE MEMBROS (SPOTLIGHTS DE NÍVEL 2 E 3) -->
+       
         <h2 class="section-title">Empresas em Destaque</h2>
         <div class="spotlight-grid" id="spotlight-container">
-            <!-- Preenchido dinamicamente via JS com empresas Ouro / Prata -->
+            
         </div>
     </main>
 
-    <!-- RODAPÉ -->
+   
     <footer>
         <div class="endereco">
             <p>Câmara de Comércio de Manaus</p>
