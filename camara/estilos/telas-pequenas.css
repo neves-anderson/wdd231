@@ -541,7 +541,6 @@ footer {
 .submit-btn {
     background-color: #0056b3;
     color: #fff;
-    border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1.1rem;
     border-radius: 5px;
@@ -589,18 +588,14 @@ footer {
 
 
 .membro-modal {
-    border: 1px solid #081a89;
+    border: 1px solid #333333;
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1.5rem auto;
     max-width: 90%;
     width: 400px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-.membro-modal::backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-}
 
 .membro-modal p {
     margin-top: 1rem;

@@ -26,7 +26,6 @@
 
     #nav-menu li a {
         display: flex;
-        border-bottom: none;
         padding: 0.5rem 0.9rem;
         border-radius: var(--radius, 4px);
         font-size: 0.95rem;
@@ -137,14 +136,14 @@
     }
 
     .membro-cards .card h4 {
-        color: #ffffff;
+        color: #000;
         font-size: 1.1rem;
         margin-bottom: 0.8rem;
     }
 
     .membro-cards .card button {
         background-color: #ffffff;
-        color: #555555;
+        color: #000;
         border: 1px solid #ccc;
         border-radius: 4px;
         padding: 0.4rem 1.2rem;
