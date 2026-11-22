@@ -136,14 +136,14 @@
     }
 
     .membro-cards .card h4 {
-        color: #000;
+        color: #ffffff;
         font-size: 1.1rem;
         margin-bottom: 0.8rem;
     }
 
     .membro-cards .card button {
         background-color: #ffffff;
-        color: #000;
+        color: #555555;
         border: 1px solid #ccc;
         border-radius: 4px;
         padding: 0.4rem 1.2rem;
